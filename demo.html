@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DEMO</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f1f1f1;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 5px;
+      background-color: rgb(37, 179, 37);
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      padding: 5px;
+      cursor: pointer;
+      border: 1px solid white;
+    }
+
+    button:hover {
+      border: 1px solid green;
+      background-color: rgb(9, 148, 9);
+    }
+
+    input {
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      padding: 5px;
+      font-size: 11px;
+    }
+
+    ::placeholder {
+      text-align: center;
+      color: black;
+    }
+
+    ::-webkit-input-placeholder {
+      text-align: center;
+    }
+
+    :-moz-placeholder {
+      text-align: center;
+    }
+
+    ::-moz-placeholder {
+      text-align: center;
+    }
+
+    :-ms-input-placeholder {
+      text-align: center;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+
+    }
+
+    #container>div {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div>
+      <label for="name"></label>
+      <input type="text" id="name" placeholder="Name" required>
+    </div>
+    <div>
+      <label for="age"></label>
+      <input type="number" id="age" placeholder="Age" required>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <button onclick="addData()">Add</button>
+      <button onclick="deleteData()">Delete</button>
+      <button onclick="updateData()">Update</button>
+    </div>
+    <div id="output">
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
